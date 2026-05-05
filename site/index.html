@@ -57,14 +57,14 @@
       <p class="section-label">01 — About</p>
       <div class="about-grid">
         <div>
-          <p>
+          <p class="body">
             I grew up as a military kid, moving around a lot and picking up a wide range of
             interests and hobbies along the way. I started programming in high school and
             quickly found myself drawn to backend development and network engineering. It
             was during this time I also took up sound engineering, starting in small venues
             and now designing systems and mixing bands weekly.
           </p>
-          <p>
+          <p class="body">
             I am passionate about learning everything I can. Notably, how to get the most 
             out of what I have, whether that's pushing a PA system to its limits, cutting 
             off every bottleneck on a network, or optimising code to run at light speed on a
@@ -79,15 +79,15 @@
           </div>
           <div class="about-meta-item">
             <p class="label">Focus</p>
-            <p class="value">Development · Systems Administration · Audio Engineering</p>
+            <p class="value">Development<br>Systems Administration<br>Audio Engineering</p>
           </div>
           <div class="about-meta-item">
             <p class="label">Education</p>
-            <p class="value">B.S. Computer Science Student, University of Wisconsin-Stout</p>
+            <p class="value">B.S. Computer Science Student,<br>University of Wisconsin-Stout</p>
           </div>
           <div class="about-meta-item">
             <p class="label">Certifications</p>
-            <p class="value">Dante Level 2 · ACP in Digital Video using Premiere Pro</p>
+            <p class="value">Dante Level 2<br>ACP in Digital Video using Premiere Pro</p>
           </div>
         </div>
       </div>
@@ -105,10 +105,14 @@
           <ul class="skill-tag-list">
             <li class="skill-tag">Python</li>
             <li class="skill-tag">Bash</li>
-            <li class="skill-tag">C/C++/C#</li>
+            <li class="skill-tag">C</li>
+            <li class="skill-tag">C++</li>
+            <li class="skill-tag">C#</li>
             <li class="skill-tag">Java</li>
             <li class="skill-tag">SQL</li>
-            <li class="skill-tag">HTML/CSS/JavaScript</li>
+            <li class="skill-tag">HTML</li>
+            <li class="skill-tag">CSS</li>
+            <li class="skill-tag">JavaScript</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -120,12 +124,15 @@
             <li class="skill-tag">Tailscale</li>
             <li class="skill-tag">Cisco IOS</li>
             <li class="skill-tag">WireGuard</li>
+            <li class="skill-tag">IPSec Tunnels</li>
           </ul>
         </div>
         <div class="skill-group">
           <p class="skill-group-title">Systems &amp; DevOps</p>
           <ul class="skill-tag-list">
             <li class="skill-tag">Linux</li>
+            <li class="skill-tag">Debian</li>
+            <li class="skill-tag">Arch</li>
             <li class="skill-tag">Docker</li>
             <li class="skill-tag">SystemD</li>
             <li class="skill-tag">Git</li>
@@ -140,8 +147,13 @@
             <li class="skill-tag">Sound System Design</li>
             <li class="skill-tag">Front-of-House Mixing</li>
             <li class="skill-tag">Monitor Mixing</li>
-            <li class="skill-tag">Lighting Design and Busking</li>
+            <li class="skill-tag">Lighting Design</li>
+            <li class="skill-tag">Busking</li>
+            <li class="skill-tag">ETC Eos Lighting Consoles</li>
             <li class="skill-tag">Live Broadcast Design & Direction</li>
+            <li class="skill-tag">Yamaha Mixing Consoles</li>
+            <li class="skill-tag">Allen & Heath Mixing Consoles</li>
+            <li class="skill-tag">PreSonus Mixing Consoles</li>
           </ul>
         </div>
       </div>
@@ -166,6 +178,11 @@
               <span class="project-year">2026</span>
             </div>
             <h3 class="project-title">Folklorico</h3>
+            <ul class="project-tags">
+              <li class="project-tag">Yamaha DM7</li>
+              <li class="project-tag">NEXO PA</li>
+              <li class="project-tag">Latin Music</li>
+            </ul>
             <p class="project-desc">
               This is a live music performance by a local Latin band, for which I designed the
               sound system and mixed the show. I used a Yamaha DM7 digital mixer to manage the 
@@ -176,14 +193,10 @@
               I can certainly say that even if this isn't the biggest show I've done, it was the
               most fun I've had mixing, and the most rewarding show to have been a part of.
             </p>
-            <ul class="project-tags">
-              <li class="project-tag">Yamaha DM7</li>
-              <li class="project-tag">NEXO PA</li>
-              <li class="project-tag">Latin Music</li>
-            </ul>
             <button class="project-toggle" onclick="this.closest('.project-card').classList.toggle('collapsed')">
               <span class="toggle-label"><span>Show less</span></span>
               <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <title id="svg-title">Dropdown Arrow</title>
                 <polyline points="18 15 12 9 6 15"/>
               </svg>
             </button>
@@ -201,6 +214,11 @@
               <span class="project-year">2025 (Ongoing)</span>
             </div>
             <h3 class="project-title">Homelab</h3>
+            <ul class="project-tags">
+              <li class="project-tag">Tailscale</li>
+              <li class="project-tag">Docker</li>
+              <li class="project-tag">Linux</li>
+            </ul>
             <p class="project-desc">
               I have been cultivating a homelab for a little over a year now. I currently have an HP workstation computer
               running Ubuntu Server, hosting a variety of services for both fun and practical use. Some highlights include 
@@ -211,11 +229,6 @@
               solution for high availability and failover. <br>
               The landing page itself I made in an hour for fun one afternoon. I do eventually intend to improve upon
             </p>
-            <ul class="project-tags">
-              <li class="project-tag">Tailscale</li>
-              <li class="project-tag">Docker</li>
-              <li class="project-tag">Linux</li>
-            </ul>
             <!--<div class="project-links">
               <a href="#" class="project-link">
                 <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
@@ -226,6 +239,7 @@
             <button class="project-toggle" onclick="this.closest('.project-card').classList.toggle('collapsed')">
               <span class="toggle-label"><span>Show less</span></span>
               <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <title id="svg-title">Dropdown Arrow</title>
                 <polyline points="18 15 12 9 6 15"/>
               </svg>
             </button>
@@ -243,6 +257,11 @@
               <span class="project-year">2026</span>
             </div>
             <h3 class="project-title">Team 5 Consulting</h3>
+            <ul class="project-tags">
+              <li class="project-tag">Network Design</li>
+              <li class="project-tag">Business Cost-Awareness</li>
+              <li class="project-tag">Security & Compliance</li>
+            </ul>
             <p class="project-desc">
               This was a made-up IT consulting firm I was a part of for my network systems & design class. We were tasked
               with designing a few different responses to requests for proposals, from companies of a small scale like a
@@ -253,20 +272,16 @@
               I also was tasked specifically on our team with maintaining a consistent brand image across our proposals, which
               you can see the result of in this project's thumbnail.
             </p>
-            <ul class="project-tags">
-              <li class="project-tag">Network Design</li>
-              <li class="project-tag">Business Cost-Awareness</li>
-              <li class="project-tag">Security & Compliance</li>
-            </ul>
             <!--<div class="project-links">
               <a href="#" class="project-link">
                 <svg viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
                 Case Study
               </a>
             </div>-->
-            <button class="project-toggle" onclick="this.closest('.project-card').classList.toggle('collapsed')">
+            <button class="project-toggle btn-ghost" onclick="this.closest('.project-card').classList.toggle('collapsed')">
               <span class="toggle-label"><span>Show less</span></span>
               <svg viewBox="0 0 24 24" width="12" height="12" stroke="currentColor" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <title id="svg-title">Dropdown Arrow</title>
                 <polyline points="18 15 12 9 6 15"/>
               </svg>
             </button>
@@ -287,9 +302,9 @@
         <div class="timeline-item">
           <div class="timeline-header">
             <span class="timeline-role">AVL Technician</span>
-            <span class="timeline-company">University of Wisconsin-Stout</span>
             <span class="timeline-period">2025 - Present</span>
           </div>
+          <span class="timeline-company">University of Wisconsin-Stout</span>
           <p class="timeline-desc">
             Collabourate with a team of talented individuals to design solutions for audio, video, and lighting needs across campus. 
             I have been able to apply my skills in sound engineering and network design to a variety of projects, from small 
@@ -301,9 +316,9 @@
         <div class="timeline-item">
           <div class="timeline-header">
             <span class="timeline-role">Communications Director</span>
-            <span class="timeline-company">Blue Devil Productions</span>
-            <span class="timeline-period">2024 - Present</span>
+            <span class="timeline-period">2024 - Present<br></span>
           </div>
+          <span class="timeline-company">Blue Devil Productions</span>
           <p class="timeline-desc">
             Coordinate communications and marketing efforts for a student-run production company. I manage our member engagement, 
             create promotional materials, and handle outreach to potential clients and collaborators. This role has allowed me to develop 
@@ -314,9 +329,9 @@
         <div class="timeline-item">
           <div class="timeline-header">
             <span class="timeline-role">Customer Service Associate & Projectionist</span>
-            <span class="timeline-company">Army & Air Force Exchange Services</span>
-            <span class="timeline-period">2022 - 2023</span>
+            <span class="timeline-period">2022 - 2023<br></span>
           </div>
+          <span class="timeline-company">Army & Air Force Exchange Services</span>
           <p class="timeline-desc">
             Interacted with customers to provide excellent service and ensure a positive experience at the restaurant and attached movie theater. 
             I was responsible for operating projection equipment, managing ticket sales, and maintaining the cleanliness and organization of both 
