@@ -417,21 +417,16 @@
     }
 
     /* Featured project (spans full width) */
-    .project-card.featured {
+    .project-card {
       grid-column: 1 / -1;
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 0;
-    }
-
-    .project-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       overflow: hidden;
       transition: border-color 0.25s, transform 0.2s;
-      display: flex;
-      flex-direction: column;
     }
 
     .project-card:hover {
@@ -482,12 +477,12 @@
     }
 
     .project-toggle svg {
-      transition: transform 0.25s ease;
+      transition: display 0.25s ease;
     }
 
     /* Collapsed state */
     .project-card.collapsed .project-desc,
-    .project-card.collapsed .project-links {
+    .project-card.collapsed .project-desc br {
       display: none;
     }
 
@@ -528,25 +523,12 @@
       display: none;
     }
 
-    .project-thumb-label {
-      font-family: var(--mono);
-      font-size: 0.65rem;
-      letter-spacing: 0.1em;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      position: relative;
-      z-index: 1;
-      background: var(--bg-card);
-      padding: 0.4rem 0.8rem;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-    }
-
     .project-thumb img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       object-position: top;
+      min-height: 0px
     }
 
     .project-body {
@@ -657,7 +639,7 @@
       content: '';
       position: absolute;
       left: 0;
-      top: 6px;
+      top: 1rem;
       bottom: 0;
       width: 1px;
       background: linear-gradient(to bottom, var(--purple-line), transparent);
@@ -673,8 +655,8 @@
     .timeline-item::before {
       content: '';
       position: absolute;
-      left: -1.5rem;
-      top: 8px;
+      left: -1.66rem;
+      top: 0.8rem;
       width: 7px;
       height: 7px;
       border-radius: 50%;
